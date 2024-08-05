@@ -7,7 +7,7 @@ type Props = {
   onDelete: (id: number) => void;
   processedId: number[];
   handleCompletedStatus: (id: number) => void;
-  handleUpdateTodo: (todo: Todo) => void;
+  handleUpdateTodo: (todo: Todo) => Promise<void>;
 };
 
 export const TodoUser: React.FC<Props> = ({
