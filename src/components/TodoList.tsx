@@ -7,7 +7,7 @@ type Props = {
   onDelete: (id: number) => void;
   tempTodo: Todo | null;
   handleCompletedStatus: (id: number) => void;
-  handleUpdateTodo: (todo: Todo) => void;
+  handleUpdateTodo: (todo: Todo) => Promise<void>;
   processedIds: number[];
 };
 

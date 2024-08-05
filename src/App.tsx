@@ -56,7 +56,6 @@ export const App: React.FC = () => {
     } catch {
       setErrorMessage('Unable to update a todo');
       setTimeout(() => setErrorMessage(null), 3000);
-      //setTempTodo(updateTodo);
     } finally {
       setProcessedId([]);
     }
